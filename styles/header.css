@@ -35,7 +35,7 @@
   
 }
 .header__nav-link:focus-visible {
-  outline: var(--dark-green) 2px dotted ;
+  outline: var(--co-dark-green) 2px dotted ;
   
 }
 
