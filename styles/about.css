@@ -1,0 +1,105 @@
+.about {
+  background-color: var(--co-white);
+  padding: 160px 0 60px 0;
+}
+
+
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: var(--co-light-green);
+  max-width: 500px;
+  position: relative;
+}
+
+.about__title::before {
+  content: "How it works";
+  position: absolute;
+  top: -55px;
+  left: 0;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--co-light-black);
+
+
+}
+
+.about__desc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--co-light-black);
+  max-width: 650px;
+}
+
+.about__cards {
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  /* flex-wrap: wrap; */
+  gap: 15px;
+}
+
+.about__cards .card:nth-child(2) {
+  margin: 240px 0 0 0;
+}
+
+@media (max-width: 1250px) {
+  .about__title {
+    max-width: 650px;
+  }
+
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    }
+
+  .about__cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .about__cards .card:nth-child(2) {
+    margin: 0;
+  }
+
+  
+}
+
+@media (max-width: 576px) {
+  .about__content {
+    padding: 0 15px;     
+    }
+
+    .about__title {
+      font-size: 35px;    
+    }
+
+    .about__desc {
+      font-size: 16px;
+    }
+}
+
+
+/* Начало. Здесь сама делала адаптацию, мужчина из ютуба непричём  */
+
+@media (max-width: 480px) {
+
+  
+  .about__cards {
+    padding: 0 15px;
+  }
+}
+
+/* Конец. Здесь сама делала адаптацию, мужчина из ютуба непричём  */
