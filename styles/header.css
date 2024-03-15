@@ -59,7 +59,17 @@
 }
 
 @media (max-width: 768px) {
+  .header__wrapper {
+    padding: 0 0 0 45px;
+  }
+
   .header__nav {
     display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .header__actions .btn {
+    width: clamp(3.75rem, -3.942rem + 38.46vw, 5.625rem);
   }
 }
